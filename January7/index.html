@@ -10,7 +10,7 @@
 <body>
     <ul>
         <li>
-            <a href="./somethingElse.html">Home</a>
+            <a href="./index.html">Home</a>
         </li>
         <li>
             <a href="./somethingElse.html">About</a>
@@ -109,24 +109,25 @@
             <legend>
                 Leave us a comment
             </legend>
+            <span>We won't share your information with anybody</span>
             <div>
                 <label>
-                    First name: <input type="text" name="firstName"/>
+                    First name: <input class="formElement" type="text" name="firstName"/>
                 </label>
             </div>
             <div>
                 <label>
-                    Last name: <input type="text" name="lastName" />
+                    Last name: <input class="formElement" type="text" name="lastName" />
                 </label>
             </div>
             <div>
                 <label>
-                    Email: <input type="email" name="email"/>
+                    Email: <input class="formElement" type="email" name="email"/>
                 </label>
             </div>
             <div>
                 <label>
-                    Phone number: <input type="tel" name="phone" />
+                    Phone number: <input class="formElement" type="tel" name="phone" />
                 </label>
             </div>
             <div>
@@ -164,8 +165,11 @@
                     No: <input type="radio" name="nextVisit" value="no" />
                 </label>
             </div>
-            <div>
-                <input type="submit"/>
+            <div class="centerChildren">
+                <input class="clickable" type="submit" id="submitButton"/>
+                <button id="clearButton" class="clickable">
+                    Clear
+                </button>
             </div>
         </fieldset>
     </form>

@@ -18,3 +18,109 @@ fieldset {
     padding: 20px;
     border: 2px dashed #DDDDDD;
 }
+
+legend {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+fieldset>span {
+    color: #6278B0;
+    padding: 20px 60px;
+    margin-bottom: 10px;
+    display: block;
+    /* Podria llegarse a lo mismo con las propiedades background-image, background-repeat, bakcground-position y background-color; */
+    background: url(../assets/puggy.jpeg) no-repeat left #CCE9F8;
+    background-size: contain;
+    border: 1px solid #6278B0;
+    text-align: center;
+}
+
+.formElement {
+    padding: 5px 10px;
+    width: 300px;
+}
+
+select[name=rating] {
+    font-size: 14px;
+    width: 250px;
+}
+
+#submitButton, #clearButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#submitButton {
+    background-color: #56C56F;
+}
+
+#clearButton {
+    background-color: #D9534F;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+table {
+    border: 1px solid #777;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+.centerChildren {
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #777;
+    padding: 15px 35px;
+}
+
+td {
+    color: #999;
+}
+
+th {
+    color: white;
+    background-color: #55B3C5;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f4f4f4
+}
+
+td:hover {
+    color: #555;
+}
+
+ul {
+    background-color: #ccc;
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding: 20px;
+}
+
+li>a {
+    text-decoration: none;
+    color: #4F545F;
+}
+
+li:hover, li>a:hover {
+    cursor: pointer;
+    background-color: #999;
+    color: white;
+}
