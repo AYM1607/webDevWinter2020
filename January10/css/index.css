@@ -1,0 +1,11 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
+
+.hija2 {
+    align-self: flex-end;
+}
