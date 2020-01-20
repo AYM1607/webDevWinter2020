@@ -10,171 +10,192 @@
 <body>
     <ul>
         <li>
-            <a href="./index.html">Home</a>
+            <a href="./index.html" id="homeButton">Home</a>
         </li>
         <li>
-            <a href="./somethingElse.html">About</a>
+            <a href="./somethingElse.html" id="aboutButton">About</a>
         </li>
         <li>
-            <a href="./somethingElse.html">Reviews</a>
+            <a href="./somethingElse.html" id="reviewsButton">Reviews</a>
         </li>
     </ul>
     <aside>
         This is the sidebar!
     </aside>
-    <h3>Welcome to our menu!</h3>
-    <table>
-        <thead>
-            <th>
-                Food
-            </th>
-            <th>
-                Description
-            </th>
-            <th>
-                Price
-            </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Salad
-                </td>
-                <td>
-                    Fresh, deliciours Cobb Salad
-                </td>
-                <td>
-                    $7.99
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Burger
-                </td>
-                <td>
-                    1/4 lb grass-fed burger with choice of cheese
-                </td>
-                <td>
-                    $6.99
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Chicken Salad Sandwich
-                </td>
-                <td>
-                    Our world famous chicken salad on a bagel with homemade pickles
-                </td>
-                <td>
-                    $8.99
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Buffalo Chicken Sandwich
-                </td>
-                <td>
-                    Spicy fried chicken on a brioche bun
-                </td>
-                <td>
-                    $10.99
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Fries
-                </td>
-                <td>
-                    Hand cut potatoes lightly fried and seasoned
-                </td>
-                <td>
-                    $1.99
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Soda
-                </td>
-                <td>
-                    Regular, diet, orange, or root beer
-                </td>
-                <td>
-                    $1.00
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <form>
-        <fieldset>
-            <legend>
-                Leave us a comment
-            </legend>
-            <span>We won't share your information with anybody</span>
-            <div>
-                <label>
-                    First name: <input class="formElement" type="text" name="firstName"/>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Last name: <input class="formElement" type="text" name="lastName" />
-                </label>
-            </div>
-            <div>
-                <label>
-                    Email: <input class="formElement" type="email" name="email"/>
-                </label>
-            </div>
-            <div>
-                <label>
-                    Phone number: <input class="formElement" type="tel" name="phone" />
-                </label>
-            </div>
-            <div>
-                Rate us:
-            </div>
-            <select name="rating">
-                <option value="veryGood">
-                    Very good
-                </option>
-                <option value="good">
-                    Good
-                </option>
-                <option value="bad">
-                    Bad
-                </option>
-                <option value="veryBad">
-                    Very bad
-                </option>
-            </select>
-            <div>
-                Your comment:
-            </div>
-            <textarea name="commment">
-            </textarea>
-            <div>
-                Would you visit us again?
-            </div>
-            <div>
-                <label>
-                    Yes: <input type="radio" name="nextVisit" value="yes"/>
-                </label>
-            </div>
-            <div>
-                <label>
-                    No: <input type="radio" name="nextVisit" value="no" />
-                </label>
-            </div>
-            <div class="centerChildren">
-                <input class="clickable" type="submit" id="submitButton"/>
-                <button id="clearButton" class="clickable">
-                    Clear
-                </button>
-            </div>
-        </fieldset>
-    </form>
+    <section class="hideableSection" id="mainSection">
+        <h3>Welcome to our menu!</h3>
+        <table>
+            <thead>
+                <th>
+                    Food
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Price
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Salad
+                    </td>
+                    <td>
+                        Fresh, deliciours Cobb Salad
+                    </td>
+                    <td>
+                        $7.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Burger
+                    </td>
+                    <td>
+                        1/4 lb grass-fed burger with choice of cheese
+                    </td>
+                    <td>
+                        $6.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Chicken Salad Sandwich
+                    </td>
+                    <td>
+                        Our world famous chicken salad on a bagel with homemade pickles
+                    </td>
+                    <td>
+                        $8.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Buffalo Chicken Sandwich
+                    </td>
+                    <td>
+                        Spicy fried chicken on a brioche bun
+                    </td>
+                    <td>
+                        $10.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fries
+                    </td>
+                    <td>
+                        Hand cut potatoes lightly fried and seasoned
+                    </td>
+                    <td>
+                        $1.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Soda
+                    </td>
+                    <td>
+                        Regular, diet, orange, or root beer
+                    </td>
+                    <td>
+                        $1.00
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="hideableSection" id="reviewsSection">
+        <form id="commentForm">
+            <fieldset>
+                <legend>
+                    Leave us a comment
+                </legend>
+                <span>We won't share your information with anybody</span>
+                <div>
+                    <label>
+                        First name: <input class="formElement" type="text" name="firstName"/>
+                    </label>
+                    <p class="formError">Please provide a first name</p>
+                </div>
+                <div>
+                    <label>
+                        Last name: <input class="formElement" type="text" name="lastName" />
+                    </label>
+                    <p class="formError">Please provide a last name</p>
+                </div>
+                <div>
+                    <label>
+                        Email: <input class="formElement" type="email" name="email"/>
+                    </label>
+                    <p class="formError">Please provide an email</p>
+                </div>
+                <div>
+                    <label>
+                        Phone number: <input class="formElement" type="tel" name="phone" />
+                    </label>
+                    <p class="formError">Please provide a phone number</p>
+                </div>
+                <div>
+                    Rate us:
+                </div>
+                <select name="rating">
+                    <option value="notSelected">
+                        Please select an option
+                    </option>
+                    <option value="veryGood">
+                        Very good
+                    </option>
+                    <option value="good">
+                        Good
+                    </option>
+                    <option value="bad">
+                        Bad
+                    </option>
+                    <option value="veryBad">
+                        Very bad
+                    </option>
+                </select>
+                <p class="formError">Please select a valid option</p>
+                <div>
+                    Your comment:
+                </div>
+                <textarea name="comment">
+                </textarea>
+                <p class="formError">Please write a comment</p>
+                <div>
+                    Would you visit us again?
+                </div>
+                <div>
+                    <label>
+                        Yes: <input type="radio" name="nextVisit" value="yes"/>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        No: <input type="radio" name="nextVisit" value="no" />
+                    </label>
+                </div>
+                <p class="formError" id="radioError">Please select an option</p>
+                <div class="centerChildren">
+                    <input class="clickable" type="submit" id="submitButton"/>
+                    <button id="clearButton" class="clickable">
+                        Clear
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <section class="hideableSection" id="aboutSection">
+        <h1>We're a very good company</h1>
+        <p>
+            That's pretty much it.
+        </p>
+    </section>
     <footer>
         This is where any content in the footer would go
     </footer>
 </body>
+<script type="text/javascript" src="./js/index.js"></script>
 </html>

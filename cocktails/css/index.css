@@ -1,0 +1,17 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.cocktail {
+    border: 1px solid grey;
+    margin-top: 10px;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+.cocktailImage {
+    width: 500px;
+    object-fit: contain;
+}
